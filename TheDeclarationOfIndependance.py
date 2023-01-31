@@ -27,12 +27,10 @@ def gasLevelGauge():
     return currentGasLevel
 
 # List of Gas station Function 
-print(gasLevelGauge())
 
 def listOfGasStations():
     gasStations = ["shell","Costco","Sam's Club","Buc-ee's","7/11","Speedway","Meijer"]
     gasStationNearby = random.choice(gasStations)
-    print(gasStationNearby)
     return gasStationNearby
 
 listOfGasStations()
