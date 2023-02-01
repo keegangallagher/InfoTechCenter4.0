@@ -29,10 +29,11 @@ def gasLevelGauge():
 
 
 # Variable calling gasLevelGauge function to store its value
-gasLevelIndicator = gaslevelGauge()
+gasLevelIndicator = gasLevelGauge()
 
 
 # List of Gas Stations Function
+
 
 def listOfGasStations():
     gasStations = ["shell", "Costco", "Sam's Club", "Buc-ee's", "7/11", "Speedway", "Meijer"]
@@ -48,3 +49,12 @@ def gasLevelAlert():
         print("***WARNING YOU ARE ON 'EMPTY'***")
         sleep(1)
         print("Calling Emergency Contact")
+    elif gasLevelIndicator == "Low":
+        print("****Warning****")
+        sleep(1)
+        print("Your gas tank is EXTREMELY low, checking maps for the closest gas station.")
+        sleep(1)
+        print("The closest gas station is:", listOfGasStations(), "which is:", milesToGasStationLow(), "miles away.")
+
+
+gasLevelAlert()
