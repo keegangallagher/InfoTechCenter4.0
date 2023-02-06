@@ -23,7 +23,7 @@ from time import sleep
 
 # Gas Level Function
 def gasLevelGauge():
-    gasLevelList = ["Empty", "Low", 'Quarter Tank', "Half Tank", "Three Quarter Tank", "Full Tank"]
+    gasLevelList = ["Empty", "Low", "Quarter Tank", "Half Tank", "Three Quarter Tank", "Full Tank"]
     currentGasLevel = random.choice(gasLevelList)
     return currentGasLevel
 
@@ -46,7 +46,7 @@ def gasLevelAlert():
     milesToGasStationLow = round(random.uniform(1, 25), 2)
     milesToGasStationQuarterTank = round(random.uniform(1, 50), 2)
     if gasLevelIndicator == "Empty":
-        print("***WARNING YOU ARE ON 'EMPTY'***")
+        print("****WARNING YOU ARE ON 'EMPTY'****")
         sleep(1)
         print("Calling Emergency Contact")
     elif gasLevelIndicator == "Low":
@@ -54,7 +54,18 @@ def gasLevelAlert():
         sleep(1)
         print("Your gas tank is EXTREMELY low, checking maps for the closest gas station.")
         sleep(1)
-        print("The closest gas station is:", listOfGasStations(), "which is:", milesToGasStationLow(), "miles away.")
+        print("The closest gas station is", listOfGasStations(), "which is", milesToGasStationLow, "miles away.")
+    elif gasLevelIndicator == "Quarter Tank":
+        print("****Warning****")
+        sleep(1)
+        print("Your gas tank has a quarter of fuel left, the closest gas station is", listOfGasStations(),
+              "which is", milesToGasStationQuarterTank, "miles away")
+    elif gasLevelIndicator == "Half Tank":
+        print("Your gas tank is half full")
+    elif gasLevelIndicator == "Three Quarter Tank":
+        print("Your gas tank is three quarters full")
+    else:
+        print("Your tank is full")
 
 
 gasLevelAlert()
