@@ -110,8 +110,6 @@ def gasLevelAlert():
         sleep(1)
 
 
-gasLevelAlert()
-
 # Date: 2.8.2023
 # Program: Weather System Update 
 
@@ -146,4 +144,6 @@ def vehicleResponseSystem():
         print("\nNWS is calling for", weatherAlert, ", please drive safely despite these conditions.")
 
 
+#Call Function Here
 vehicleResponseSystem()
+gasLevelAlert()
