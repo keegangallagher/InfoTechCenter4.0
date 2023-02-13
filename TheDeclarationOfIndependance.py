@@ -127,21 +127,28 @@ weatherAlert = weather()
 def vehicleResponseSystem():
     if weatherAlert == "Snowing":
         print("\nNWS has changed your alarm by 15 minutes because the weather forecast of:", weatherAlert)
-        print("VRS has been engaged, only allowing your vehicle to go 45 MPH")
+        print("\nVRS has been engaged, only allowing your vehicle to go 45 MPH\n")
+        sleep(1)
     elif weatherAlert == "Blizzard":
         print("\nNWS has changed your alarm by 30 minutes because the weather forecast of:", weatherAlert)
-        print("VRS has been engaged, only allowing your vehicle to go 35 MPH")
+        print("\nVRS has been engaged, only allowing your vehicle to go 35 MPH\n")
+        sleep(1)
     elif weatherAlert == "Rain":
-        print("\nNWS is calling for", weatherAlert, ", please drive extra careful!")
+        print("\nNWS is calling for", weatherAlert, ", please drive extra careful!\n")
+        sleep(1)
     elif weatherAlert == "Foggy":
-        print("\nNWS is calling for", weatherAlert, ", please drive extra careful!")
+        print("\nNWS is calling for", weatherAlert, ", please drive extra careful!\n")
+        sleep(1)
     elif weatherAlert == "Windy":
-        print("\nNWS is calling for", weatherAlert, ", please drive extra careful!")
+        print("\nNWS is calling for", weatherAlert, ", please drive extra careful!\n")
+        sleep(1)
     elif weatherAlert == "Icy":
         print("\nNWS has changed your alarm by 60 minutes because the weather forecast of:", weatherAlert)
-        print("VRS has been engaged, only allowing your vehicle to go 25 MPH")
+        print("\nVRS has been engaged, only allowing your vehicle to go 25 MPH\n")
+        sleep(1)
     else:
-        print("\nNWS is calling for", weatherAlert, ", please drive safely despite these conditions.")
+        print("\nNWS is calling for", weatherAlert, ", please drive safely despite these conditions.\n")
+        sleep(1)
 
 
 #Call Function Here
