@@ -119,8 +119,9 @@ def weather():
     weatherCondition = random.choice(weatherForecast)
     return weatherCondition
 
+
 # Variable to call weather() once in our VRS()
-weatherAlert = weather() 
+weatherAlert = weather()
 
 
 # VRS() to respond to the weather condition
@@ -151,6 +152,6 @@ def vehicleResponseSystem():
         sleep(1)
 
 
-#Call Function Here
+# Call Function Here
 vehicleResponseSystem()
 gasLevelAlert()
