@@ -153,5 +153,9 @@ def vehicleResponseSystem():
 
 
 # Call Function Here
+print("\nNational Weather Service is checking the weather and determining the VRS settings...")
+sleep(1.5)
 vehicleResponseSystem()
+print("\nInfoTechCenter is checking gas level...\n")
+sleep(1.5)
 gasLevelAlert()
